@@ -1,0 +1,124 @@
+.section {
+  text-align: center; }
+  .section h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px; }
+
+#optionsSection {
+  background-image: url("../img/background1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 70vh; }
+  #optionsSection #optionsContainer {
+    position: relative;
+    padding: 100px 0; }
+    #optionsSection #optionsContainer .option {
+      display: inline-block;
+      margin: 30px 25px;
+      vertical-align: middle;
+      width: 250px;
+      height: 280px;
+      background-color: #fff;
+      border-radius: 50px;
+      box-shadow: 0 0 25px 0 #333;
+      padding: 30px 25px; }
+      #optionsSection #optionsContainer .option .logo {
+        width: 150px;
+        height: 150px; }
+      #optionsSection #optionsContainer .option .text {
+        margin-top: 40px;
+        color: #615575;
+        font-size: 14pt;
+        font-weight: bold; }
+
+#pricingSection {
+  padding: 10px 50px 20px 50px;
+  height: 310px;
+  color: #fff;
+  background-color: #32a7de;
+  border-top: 2px solid #3a384b;
+  overflow: hidden; }
+  @media screen and (max-width: 800px) {
+    #pricingSection {
+      height: auto; } }
+  #pricingSection #pricingContainer {
+    margin-top: 100px;
+    opacity: 0;
+    transition: all 1s ease-out; }
+    @media screen and (max-width: 800px) {
+      #pricingSection #pricingContainer {
+        transition: none; } }
+    #pricingSection #pricingContainer.visible {
+      margin-top: 0;
+      opacity: 1; }
+    #pricingSection #pricingContainer .box {
+      display: inline-block;
+      vertical-align: top;
+      width: 220px;
+      height: 80px;
+      margin: 0px 20px 20px 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 20px 40px 40px 20px; }
+      #pricingSection #pricingContainer .box:last-child {
+        margin-right: 0;
+        background-color: #000; }
+      #pricingSection #pricingContainer .box img {
+        float: left;
+        width: 100px;
+        height: 100px; }
+      #pricingSection #pricingContainer .box h2 {
+        float: right;
+        margin-top: 20px;
+        color: #32a7de;
+        font-size: 48px; }
+
+#aboutSection {
+  padding: 10px 50px 20px 50px;
+  background-color: #374765;
+  color: #fff;
+  text-align: center; }
+  #aboutSection #contactOptions {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px; }
+    #aboutSection #contactOptions a {
+      display: block;
+      padding: 10px;
+      margin: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 15px;
+      transition: all .5s; }
+      #aboutSection #contactOptions a.email {
+        background-color: #d33;
+        border: 3px solid #d33; }
+        #aboutSection #contactOptions a.email:hover {
+          color: #d33; }
+      #aboutSection #contactOptions a.linkedin {
+        background-color: #32a7de;
+        border: 3px solid #32a7de; }
+        #aboutSection #contactOptions a.linkedin:hover {
+          color: #32a7de; }
+      #aboutSection #contactOptions a:hover {
+        background-color: #fff; }
+  #aboutSection #aboutMe {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 800px;
+    font-style: italic;
+    font-size: 18px;
+    margin-left: 100px;
+    opacity: 0;
+    transition: all 1s; }
+    #aboutSection #aboutMe.visible {
+      margin-left: 0;
+      opacity: 1; }
+    @media screen and (max-width: 800px) {
+      #aboutSection #aboutMe {
+        width: auto;
+        transition: none; } }

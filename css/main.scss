@@ -1,0 +1,20 @@
+---
+---
+
+@import 'header';
+
+body {
+    font-family: "Open Sans", sans-serif;
+    
+    margin: 0;
+    
+    min-width: 600px;
+}
+
+#container {
+    position: relative;
+    
+    top: $headerHeight;
+    
+    width: 100%;
+}

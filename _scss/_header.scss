@@ -1,0 +1,18 @@
+$headerHeight: 120px;
+
+header {
+    position: fixed;
+    z-index: 10;
+    
+    width: 100%;
+    height: $headerHeight;
+    
+    background-color: #fff;
+    box-shadow: 0 0 20px 5px #333;
+    
+    text-align: center;
+    
+    #mainLogo {
+        height: $headerHeight;
+    }
+}
