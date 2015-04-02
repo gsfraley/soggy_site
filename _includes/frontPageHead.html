@@ -1,18 +1,1 @@
 <link href="{{ site.url }}/css/frontPage.css" rel="stylesheet" type="text/css" />
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script type="text/javascript">
-    $(function (){
-        windowWidth = $(window).width();
-        windowHeight = $(window).height();
-        
-        $(window).scroll(function() {
-            if($(window).scrollTop() > .2 * windowHeight) {
-                $("#pricingContainer").addClass("visible");
-            }
-            
-            if($(window).scrollTop() > .2 * windowHeight + 310) {
-                $("#aboutMe").addClass("visible");
-            }
-        });
-    });
-</script>

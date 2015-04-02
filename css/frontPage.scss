@@ -70,19 +70,6 @@
     }
 
     #pricingContainer {
-        margin-top: 100px;
-        opacity: 0;
-        transition: all 1s ease-out;
-        
-        @media screen and (max-width: 800px) {
-            transition: none;
-        }
-        
-        &.visible {
-            margin-top: 0;
-            opacity: 1;
-        }
-
         .box {
             display: inline-block;
             vertical-align: top;
@@ -185,19 +172,8 @@
         font-style: italic;
         font-size: 18px;
         
-        margin-left: 100px;
-        opacity: 0;
-        
-        transition: all 1s;
-        
-        &.visible {
-            margin-left: 0;
-            opacity: 1;
-        }
-        
         @media screen and (max-width: 800px) {
             width: auto;
-            transition: none;
         }
     }
 }
