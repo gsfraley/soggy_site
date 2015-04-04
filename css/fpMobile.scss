@@ -54,10 +54,11 @@
     
     #pricingContainer {
         .box {
-            display: inline-block;
+            display: block;
             
             width: 220px;
             height: 80px;
+            margin: 10px auto;
             
             background-color: #fff;
             border-radius: 20px;
