@@ -3,49 +3,43 @@
 
 .section {
     text-align: center;
+    color: #fff;
+    padding: 10px 50px 40px 50px;
     
     h1 {
-        font-size: 30px;
+        font-size: 30pt;
         text-transform: uppercase;
         letter-spacing: 10px;
     }
 }
 
 #optionsSection {
-    background-image: url("../img/background1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
-    min-height: 70vh;
-
+    padding: 0;
+    
     #optionsContainer {
-        position: relative;
-        padding: 100px 0;
+        padding: 20px 0;
         
         .option {
             display: inline-block;
-
-            margin: 30px 25px;
-            vertical-align: middle;
-
-            width: 250px;
+            
+            width: 70vw;
             height: 280px;
-
+            
+            margin: 30px 0;
+            padding: 30px 25px;
+            
             background-color: #fff;
             border-radius: 50px;
             box-shadow: 0 0 25px 0 #333;
-
-            padding: 30px 25px;
-
+            
             .logo {
                 width: 150px;
                 height: 150px;
             }
-
+            
             .text {
                 margin-top: 40px;
-
+                
                 color: #615575;
                 font-size: 14pt;
                 font-weight: bold;
@@ -55,38 +49,25 @@
 }
 
 #pricingSection {
-    padding: 10px 50px 20px 50px;
-
-    height: 310px;
-    
-    color: #fff;
     background-color: #32a7de;
     border-top: 2px solid #3a384b;
-
-    overflow: hidden;
     
-    @media screen and (max-width: 800px) {
-        height: auto;
-    }
-
     #pricingContainer {
         .box {
             display: inline-block;
-            vertical-align: top;
-
+            
             width: 220px;
             height: 80px;
-
-            margin: 0px 20px 20px 20px;
-
+            
+            margin: 0 0 20px 0;
+            
             background-color: #fff;
             border-radius: 20px;
-
+            
             padding: 20px 40px 40px 20px;
-
+            
             &:last-child {
                 margin-right: 0;
-                background-color: #000;
             }
             
             img {
@@ -98,7 +79,6 @@
             
             h2 {
                 float: right;
-                
                 margin-top: 20px;
                 
                 color: #32a7de;
@@ -109,37 +89,25 @@
 }
 
 #aboutSection {
-    padding: 10px 50px 20px 50px;
-    
     background-color: #374765;
-    color: #fff;
-    
-    text-align: center;
     
     #contactOptions {
-        display: inline-block;
-        
-        vertical-align: middle;
-        
-        margin-right: 40px;
-        
         a {
-            display: block;
+            display: inline-block;
             
+            width: 80px;
             padding: 10px;
-            margin: 10px;
             
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            
-            border-radius: 15px;
             
             transition: all .5s;
             
             &.email {
                 background-color: #d33;
                 border: 3px solid #d33;
+                border-radius: 15px 0 0 15px;
                 
                 &:hover {
                     color: #d33;
@@ -149,6 +117,7 @@
             &.linkedin {
                 background-color: #32a7de;
                 border: 3px solid #32a7de;
+                border-radius: 0 15px 15px 0;
                 
                 &:hover {
                     color: #32a7de;
@@ -162,18 +131,8 @@
     }
     
     #aboutMe {
-        display: inline-block;
-        text-align: left;
-        
-        vertical-align: middle;
-        
-        width: 800px;
-        
-        font-style: italic;
-        font-size: 18px;
-        
-        @media screen and (max-width: 800px) {
-            width: auto;
-        }
+        display: block;
+        margin: 0 auto;
+        max-width: 1000px;
     }
 }

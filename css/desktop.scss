@@ -1,0 +1,30 @@
+---
+---
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    
+    background-image: url("../img/background1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    border-bottom: 40px solid #fff;
+}
+
+header {
+    width: calc(100% - 200px);
+    height: 125px;
+    
+    margin: 0 auto 0 auto;
+    
+    background-color: #fff;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 0 25px 0 #333;
+    
+    #mainLogo {
+        height: 120px;
+    }
+}
